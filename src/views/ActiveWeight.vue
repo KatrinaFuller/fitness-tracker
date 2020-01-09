@@ -1,9 +1,13 @@
 <template>
-  <div class="activeWeight"></div>
+  <div class="activeWeight">
+    <backbar />
+  </div>
 </template>
 
 
 <script>
+import backbar from "../components/backbar";
+
 export default {
   name: "activeWeight",
   data() {
@@ -11,7 +15,7 @@ export default {
   },
   computed: {},
   methods: {},
-  components: {}
+  components: { backbar }
 };
 </script>
 
