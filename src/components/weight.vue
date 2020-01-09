@@ -1,6 +1,6 @@
 <template>
   <div class="weight">
-    <div class="card shadow" style="width: 12rem;">
+    <div class="card shadow" style="width: 12rem;" @click="viewWeight()">
       <i class="fas fa-weight fa-5x"></i>
       <div class="card-body">
         <p class="card-text">Weight</p>
@@ -17,7 +17,13 @@ export default {
     return {};
   },
   computed: {},
-  methods: {},
+  methods: {
+    viewWeight() {
+      this.$router.push({
+        name: "Weight"
+      });
+    }
+  },
   components: {}
 };
 </script>

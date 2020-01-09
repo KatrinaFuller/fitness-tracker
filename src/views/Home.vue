@@ -1,10 +1,12 @@
 <template>
   <div class="home">
     <navbar />
-    <weight />
-    <workout />
-    <food />
-    <water />
+    <div class="row justify-content-around">
+      <weight />
+      <workout />
+      <food />
+      <water />
+    </div>
   </div>
 </template>
 

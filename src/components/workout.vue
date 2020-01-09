@@ -1,6 +1,6 @@
 <template>
   <div class="workout">
-    <div class="card shadow" style="width: 12rem;">
+    <div class="card shadow" style="width: 12rem;" @click="viewWorkout()">
       <i class="fas fa-dumbbell fa-5x"></i>
       <div class="card-body">
         <p class="card-text">Workout</p>
@@ -17,7 +17,13 @@ export default {
     return {};
   },
   computed: {},
-  methods: {},
+  methods: {
+    viewWorkout() {
+      this.$router.push({
+        name: "Workout"
+      });
+    }
+  },
   components: {}
 };
 </script>

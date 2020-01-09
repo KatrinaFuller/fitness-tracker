@@ -19,7 +19,35 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/About.vue')
     }
-  }
+  },
+  {
+    path: '/Weight',
+    name: 'Weight',
+    component: function () {
+      return import(/* webpackChunkName: "activeWeight" */ '../views/ActiveWeight.vue')
+    }
+  },
+  {
+    path: '/Workout',
+    name: 'Workout',
+    component: function () {
+      return import(/* webpackChunkName: "activeWorkout" */ '../views/ActiveWorkout.vue')
+    }
+  },
+  {
+    path: '/Food',
+    name: 'Food',
+    component: function () {
+      return import(/* webpackChunkName: "activeFood" */ '../views/ActiveFood.vue')
+    }
+  },
+  {
+    path: '/Water',
+    name: 'Water',
+    component: function () {
+      return import(/* webpackChunkName: "activeWater" */ '../views/ActiveWater.vue')
+    }
+  },
 ]
 
 const router = new VueRouter({
